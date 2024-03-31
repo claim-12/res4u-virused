@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Redirect Verification</title>
+</head>
+<body>
+  <div class="container">
+  <h1>Please enter the password to jump version.</h1>
+  <label for="password">Enter Password:</label>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Process</button>
+    <p id="message"></p>
+  </div>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    function checkPassword() {
+      var password = document.getElementById('password').value;
+      var message = document.getElementById('message');
+
+      // Example: Check if the password is "examplePassword"
+      if (password === 'ucK7*(212X129kN') {
+        // Redirect to a page on successful password entry
+        window.location.href = 'areyousure.html';
+      } else {
+        // Show an alert on unsuccessful password entry
+        alert('Incorrect password. Try again.');
+        // You can also update the message element if you don't want to use an alert
+        // message.innerHTML = 'Incorrect password. Try again.';
+      }
+    }
+  </script>
+</body>
+</html>
